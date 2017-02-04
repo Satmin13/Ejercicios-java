@@ -26,11 +26,10 @@ dentro de un número y devuelve el trozo correspondiente.
 14. juntaNumeros: Pega dos números para formar uno.
 **/
 
-package matematicas ;
+package matematicas;
 
 public class Varias {
 	
-		
 		public static boolean esPrimo(int num) {
 
 		int sum = 2;
@@ -40,7 +39,6 @@ public class Varias {
 		
 			do{
 				if(num%sum == 0){		
-					System.out.println("El número no es primo. Porque es divisible entre:" + sum);
 					esPrimo = false;
 					salir = false;
 				} 
@@ -48,9 +46,12 @@ public class Varias {
 				if(sum==num){
 					esPrimo = true;
 					salir = false;
-					System.out.println("El número es primo. Porque solo es divisible entre si mismo: " + sum + " y 1.");
-
 					}
 			} while( salir == true);	
+			
 		return esPrimo;
-	}}
+		
+	  }
+	
+	
+}
